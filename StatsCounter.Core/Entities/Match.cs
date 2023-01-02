@@ -15,5 +15,6 @@
         public int PassedYards { get; private set; }
         public int PlayerId { get; private set; }
         public DateTime Date { get; private set; }
+        public Player Player { get; private set; }
     }
 }

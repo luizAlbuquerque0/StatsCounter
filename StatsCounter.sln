@@ -5,7 +5,12 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatsCounter.API", "StatsCounter.API\StatsCounter.API.csproj", "{C5F755D4-2716-4850-AFE8-4AF4B6D47C6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsCounter.Core", "StatsCounter.Core\StatsCounter.Core.csproj", "{5079F709-0A23-4023-B6F6-B307AD88E6D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatsCounter.Core", "StatsCounter.Core\StatsCounter.Core.csproj", "{5079F709-0A23-4023-B6F6-B307AD88E6D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsCounter.Infrastructure", "StatsCounter.Infrastructure\StatsCounter.Infrastructure.csproj", "{0F9EB22F-DE48-4680-AFFE-A54EB70B5DCC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5079F709-0A23-4023-B6F6-B307AD88E6D0} = {5079F709-0A23-4023-B6F6-B307AD88E6D0}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{5079F709-0A23-4023-B6F6-B307AD88E6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5079F709-0A23-4023-B6F6-B307AD88E6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5079F709-0A23-4023-B6F6-B307AD88E6D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F9EB22F-DE48-4680-AFFE-A54EB70B5DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9EB22F-DE48-4680-AFFE-A54EB70B5DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F9EB22F-DE48-4680-AFFE-A54EB70B5DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9EB22F-DE48-4680-AFFE-A54EB70B5DCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

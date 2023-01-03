@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatsCounter.API", "StatsCounter.API\StatsCounter.API.csproj", "{C5F755D4-2716-4850-AFE8-4AF4B6D47C6D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0F9EB22F-DE48-4680-AFFE-A54EB70B5DCC} = {0F9EB22F-DE48-4680-AFFE-A54EB70B5DCC}
+		{5079F709-0A23-4023-B6F6-B307AD88E6D0} = {5079F709-0A23-4023-B6F6-B307AD88E6D0}
+		{8DC18616-DF22-466F-AAE7-776A82956E9F} = {8DC18616-DF22-466F-AAE7-776A82956E9F}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatsCounter.Core", "StatsCounter.Core\StatsCounter.Core.csproj", "{5079F709-0A23-4023-B6F6-B307AD88E6D0}"
 EndProject
@@ -12,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatsCounter.Infrastructure
 		{5079F709-0A23-4023-B6F6-B307AD88E6D0} = {5079F709-0A23-4023-B6F6-B307AD88E6D0}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsCounter.Application", "StatsCounter.Application\StatsCounter.Application.csproj", "{8DC18616-DF22-466F-AAE7-776A82956E9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatsCounter.Application", "StatsCounter.Application\StatsCounter.Application.csproj", "{8DC18616-DF22-466F-AAE7-776A82956E9F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5079F709-0A23-4023-B6F6-B307AD88E6D0} = {5079F709-0A23-4023-B6F6-B307AD88E6D0}
 	EndProjectSection

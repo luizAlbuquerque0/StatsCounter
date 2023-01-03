@@ -13,6 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatsCounter.Infrastructure
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsCounter.Application", "StatsCounter.Application\StatsCounter.Application.csproj", "{8DC18616-DF22-466F-AAE7-776A82956E9F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5079F709-0A23-4023-B6F6-B307AD88E6D0} = {5079F709-0A23-4023-B6F6-B307AD88E6D0}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

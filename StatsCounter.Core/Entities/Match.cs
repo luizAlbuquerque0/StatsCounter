@@ -16,5 +16,16 @@
         public int PlayerId { get; private set; }
         public DateTime Date { get; private set; }
         public Player Player { get; private set; }
+
+        
+        public void Update(int touchdowns, int interceptations, int completedPasses, int attemptedPasses, int passedYards)
+        {
+            TouchDowns = touchdowns;
+            Interceptations = interceptations;
+            CompletedPasses = completedPasses;
+            AttemptedPasses = attemptedPasses;
+            PassedYards = passedYards;
+        }
+        
     }
 }

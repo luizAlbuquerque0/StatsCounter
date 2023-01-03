@@ -2,7 +2,7 @@
 {
     public class ProfileViewModel
     {
-        public ProfileViewModel(int playedMatchs, int totalTouchDowns, int totalInterceptations, int totalCompletedPasses, int totalAttemptedPasses, int totalPassedYards, List<MatchDetailsViewModel> matchs)
+        public ProfileViewModel(int playedMatchs, int totalTouchDowns, int totalInterceptations, int totalCompletedPasses, int totalAttemptedPasses, int totalPassedYards, List<SimplifyedMatchViewModel    > matchs)
         {
             PlayedMatchs = playedMatchs;
             TotalTouchDowns = totalTouchDowns;
@@ -19,6 +19,6 @@
         public int TotalCompletedPasses { get; private set; }
         public int TotalAttemptedPasses { get; private set; }
         public int TotalPassedYards { get; private set; }
-        public List<MatchDetailsViewModel> Matchs { get; set; }
+        public List<SimplifyedMatchViewModel> Matchs { get; set; }
     }
 }

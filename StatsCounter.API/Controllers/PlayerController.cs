@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using StatsCounter.Application.Commands.CreatePlayer;
+using StatsCounter.Application.Commands.LoginUser;
 using StatsCounter.Application.Queries.GetPlayerStats;
 
 namespace StatsCounter.API.Controllers
@@ -30,6 +31,16 @@ namespace StatsCounter.API.Controllers
             var id = await _mediator.Send(comand);
 
             return CreatedAtAction(nameof(GetById), new { id = id }, comand);
+        }
+
+        [HttpPut("login")]
+        public async Task<IActionResult> Login([FromBody] LoginUserCommand command)
+        {
+           var loginViewModel =  await _mediator.Send(command);
+
+            if (loginViewModel == null) return NotFound();
+
+            return Ok(loginViewModel);
         }
     }
 }

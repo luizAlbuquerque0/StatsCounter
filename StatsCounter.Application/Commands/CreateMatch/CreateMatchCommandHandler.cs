@@ -15,6 +15,7 @@ namespace StatsCounter.Application.Commands.CreateMatch
         {
             var match = new Match(request.PlayerId, request.Date);
             await _matchRepository.CreateMatchAsync(match);
+            await _matchRepository.SaveChangesAsync();
             return match.Id;
         }
     }

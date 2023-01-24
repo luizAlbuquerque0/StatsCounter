@@ -13,6 +13,7 @@ namespace StatsCounter.Application.Commands.DeleteMatch
         public async Task<Unit> Handle(DeleteMatchCommand request, CancellationToken cancellationToken)
         {
             await _matchRepository.DeleteMatchAsync(request.id);
+            await _matchRepository.SaveChangesAsync();
             return Unit.Value;
         }
     }

@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StatsCounter.Application.Commands.CreateMatch;
 using StatsCounter.Application.Commands.DeleteMatch;
@@ -9,6 +10,7 @@ using StatsCounter.Application.Queries.GetMatchById;
 namespace StatsCounter.API.Controllers
 {
     [Route("api/matchs")]
+    [Authorize]
     public class MatchController : ControllerBase
     {
         private readonly IMediator _mediator;

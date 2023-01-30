@@ -22,6 +22,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatsCounter.Application", 
 		{5079F709-0A23-4023-B6F6-B307AD88E6D0} = {5079F709-0A23-4023-B6F6-B307AD88E6D0}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsCounter.UnitTests", "StatsCounter.UnitTests\StatsCounter.UnitTests.csproj", "{CE98D6E5-9546-4403-A279-6BF84750D509}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5079F709-0A23-4023-B6F6-B307AD88E6D0} = {5079F709-0A23-4023-B6F6-B307AD88E6D0}
+		{8DC18616-DF22-466F-AAE7-776A82956E9F} = {8DC18616-DF22-466F-AAE7-776A82956E9F}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +50,10 @@ Global
 		{8DC18616-DF22-466F-AAE7-776A82956E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DC18616-DF22-466F-AAE7-776A82956E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DC18616-DF22-466F-AAE7-776A82956E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE98D6E5-9546-4403-A279-6BF84750D509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE98D6E5-9546-4403-A279-6BF84750D509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE98D6E5-9546-4403-A279-6BF84750D509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE98D6E5-9546-4403-A279-6BF84750D509}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

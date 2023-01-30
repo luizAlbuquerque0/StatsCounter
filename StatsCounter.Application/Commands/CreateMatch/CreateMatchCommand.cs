@@ -2,7 +2,7 @@
 
 namespace StatsCounter.Application.Commands.CreateMatch
 {
-    public class CreateMatchCommand : IRequest<int>
+    public class CreateMatchCommand : IRequest<int?>
     {
         public CreateMatchCommand(int playerId, DateTime date)
         {

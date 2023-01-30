@@ -33,6 +33,7 @@ namespace StatsCounter.API.Controllers
         public async Task<IActionResult> CreateMatch([FromBody] CreateMatchCommand command)
         {
             var id = await _mediator.Send(command);
+            if(id == null) return BadRequest();
 
             return CreatedAtAction(nameof(GetById), new { id = id }, command);
         }
